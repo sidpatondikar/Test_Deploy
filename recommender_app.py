@@ -38,12 +38,13 @@ def recommend(title, cosine_sim, dataframe):
 
 # Main Streamlit app
 def main():
-    st.title('Movie Recommender System')
+    st.title('Netflix Recommender System')
+    st.markdown('<p style="color: #E50914;">Content Data till 2019</p>', unsafe_allow_html=True)
     recommender_df = load_data()
     cosine_sim = calculate_cosine_similarity(recommender_df)
 
     # Dropdown for movie selection
-    selected_movie = st.selectbox("Select a movie", recommender_df.index)
+    selected_movie = st.selectbox("Select a Show/Movie", recommender_df.index)
     
     # Recommend button
     if st.button("Recommend"):
