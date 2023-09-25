@@ -38,21 +38,7 @@ def recommend(title, cosine_sim, dataframe):
 
 # Main Streamlit app
 def main():
-    st.markdown(
-        """
-        <style>
-        .title-text {
-            color: #E50914;
-        }
-        .stButton button {
-            background-color: #E50914;
-        }
-        </style>
-        """,
-        unsafe_allow_html=True
-    )
-
-    st.markdown('<p class="title-text">Netflix Recommender System</p>', unsafe_allow_html=True)
+    st.title('<h style="color: #E50914;">Netflix Recommender System</h1>', unsafe_allow_html=True)
     st.markdown('<p style="color: white;">Content Data till 2019</p>', unsafe_allow_html=True)
     recommender_df = load_data()
     cosine_sim = calculate_cosine_similarity(recommender_df)
