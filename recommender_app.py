@@ -38,7 +38,7 @@ def recommend(title, cosine_sim, dataframe):
 
 # Main Streamlit app
 def main():
-    st.title('Netflix :blue[Recommender] System:tv:')
+    st.title(':red[Netflix] Recommender System:tv:')
     st.markdown('<p style="color: white;">Content Data till 2019</p>', unsafe_allow_html=True)
     recommender_df = load_data()
     cosine_sim = calculate_cosine_similarity(recommender_df)
