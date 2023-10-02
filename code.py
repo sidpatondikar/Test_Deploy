@@ -89,7 +89,7 @@ if st.session_state.step == 4:
         prediction = pickled_model.predict(scaled_values)
         st.subheader(':green[Prediction Result]:')
         if prediction[0] == 1:
-            st.write(':green[The model predicts that you have a risk of heart disease.]')
+            st.write(':red[The model predicts that you have a risk of heart disease.]')
         else:
             st.write(':green[The model predicts that you do not have a risk of heart disease.]')
 
