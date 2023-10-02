@@ -50,10 +50,10 @@ if st.session_state.step == 2:
 # Step 3: Medical history
 if st.session_state.step == 3:
     st.write('## :green[Medical History]')
-    bp_meds = st.radio('**Taking Blood Pressure Medication?**', ['Yes', 'No'], bp_meds)
-    prevalent_stroke = st.radio('**Prevalent Stroke?**', ['Yes', 'No'], prevalent_stroke)
-    prevalent_hyp = st.radio('**Prevalent Hypertension?**', ['Yes', 'No'], prevalent_hyp)
-    diabetes = st.radio('**Diabetes?**', ['Yes', 'No'], diabetes)
+    bp_meds = st.radio('**Taking Blood Pressure Medication?**', ['Yes', 'No'])
+    prevalent_stroke = st.radio('**Prevalent Stroke?**', ['Yes', 'No'])
+    prevalent_hyp = st.radio('**Prevalent Hypertension?**', ['Yes', 'No'])
+    diabetes = st.radio('**Diabetes?**', ['Yes', 'No'])
 
     # Add Medical Current button
     if st.button('Add Medical Current'):
