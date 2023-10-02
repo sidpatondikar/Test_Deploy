@@ -31,7 +31,7 @@ st.write('**Please provide the following information**')
 if st.session_state.step == 1:
     st.write('## :green[Demographic Data]')
     age = st.slider('**Age**', 1, 100, age)
-    sex = st.radio('**Sex**', ['Male', 'Female'], sex)
+    sex = st.radio('**Sex**', ['Male', 'Female'])
     education = st.selectbox('**Education Level**', [1, 2, 3, 4], education)
 
     # Add Behavioral Data button
